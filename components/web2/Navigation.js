@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import Link from "next/link";
 
 
-
 export default function Navigation() {
   const [drop, setDrop] = useState(false);
+ 
+ 
+
 
   const openDrop = () => {
     setDrop(!drop);
@@ -13,10 +15,13 @@ export default function Navigation() {
 
   const listItems = [
     { id: 1, name: "Productos", url: "/" },
-    { id: 2, name: "Features", url: "/" },
-    { id: 3, name: "Marketplace", url: "/" },
+    { id: 2, name: "Features", url: "/web2" },
+    { id: 3, name: "Marketplace", url: "/web3" },
     { id: 4, name: "Company", url: "/" },
   ];
+
+
+
 
   return (
     <div className='w-full'  >
@@ -24,7 +29,7 @@ export default function Navigation() {
       <div className="relative overflow-hidden ">
         <div className="mx-auto "  >
 
-          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28 ">
+          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28  dark:bg-black ">
               
             {/* corte de la foto con un svg */}
             <svg
