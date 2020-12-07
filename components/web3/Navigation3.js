@@ -1,45 +1,44 @@
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import * as FaIcons from "react-icons/fa";
 import { useGlobalContext } from "../../context/themeContext";
 
-
 export default function Navigation3() {
-
-  const { cambioDark } = useGlobalContext();
+  const { cambioDark, toggle } = useGlobalContext();
 
   return (
     <div className="w-11/12 mx-auto">
-
       <div>
-      <Link href="/">
-         
-         <a> home </a>
-       </Link>
-       <Link href="/web3">
-      
-         <a> web3</a>
-       </Link>
-       <Link href="/web2">
-   
-         <a> web2</a>
-       </Link>
+        <Link href="/">
+          <a> home </a>
+        </Link>
+        <Link href="/web3">
+          <a> web3</a>
+        </Link>
+        <Link href="/web2">
+          <a> web2</a>
+        </Link>
       </div>
 
       <button className="py-2 px-4 bg-blue-200" onClick={() => cambioDark()}>
         cambio rol
       </button>
 
-
-     
-      <FaIcons.FaRegMoon />
-
-      <div className="bg-blue-600 h-10 w-10  rounded-full flex items-center justify-center">
-        <FaIcons.FaMoon />
-      </div>
-      <div className="bg-yellow-300 h-10 w-10  rounded-full flex items-center justify-center">
-        <FaIcons.FaSun />
-      </div>
+      {toggle ? (
+        <div
+          className="bg-blue-600 h-10 w-10  rounded-full flex items-center justify-center"
+          onClick={() => cambioDark()}
+        >
+          <FaIcons.FaMoon />
+        </div>
+      ) : (
+        <div
+          className="bg-yellow-300 h-10 w-10  rounded-full flex items-center justify-center"
+          onClick={() => cambioDark()}
+        >
+          <FaIcons.FaSun />
+        </div>
+      )}
 
       <section>
         <div
