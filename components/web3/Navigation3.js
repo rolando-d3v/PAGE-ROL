@@ -20,9 +20,14 @@ export default function Navigation3() {
         </Link>
       </div>
 
-      <button className="py-2 px-4 bg-blue-200" onClick={() => cambioDark()}>
-        cambio rol
-      </button>
+      <br />
+
+      <div>
+        <button className="py-2 px-4 bg-blue-200" onClick={() => cambioDark()}>
+          cambio rol
+        </button>
+      </div>
+      <br />
 
       {toggle ? (
         <div
@@ -39,6 +44,24 @@ export default function Navigation3() {
           <FaIcons.FaSun />
         </div>
       )}
+
+      <br />
+
+      <section className="w-28 relative flex items-center ">
+        <FaIcons.FaSun className="dark:text-gray-400 text-yellow-400 absolute left-0" />
+        <div
+          className="w-14 h-7 bg-green-300  dark:bg-blue-500 rounded-2xl flex items-center mx-auto shadow-md "
+          onClick={() => cambioDark()}
+        >
+          <div
+            className={`${
+              toggle ? "translate-x-8 " : ""
+            } bg-gray-50  inline-block h-5 w-5 rounded-full transform  duration-300 shadow-lg`}
+            style={{ margin: "0 0.15rem" }}
+          ></div>
+        </div>
+        <FaIcons.FaMoon className="dark:text-blue-600 text-gray-400 absolute right-0" />
+      </section>
 
       <section>
         <div
