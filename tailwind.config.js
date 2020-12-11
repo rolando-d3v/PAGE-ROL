@@ -22,14 +22,15 @@ module.exports = {
         emerald: colors.emerald,
         lime: colors.lime,
         amber: colors.amber,
+        green: colors.green,
+        red: colors.red,
 
         warmGray: colors.warmGray,
         trueGray: colors.trueGray,
         coolGray: colors.coolGray,
         blueGray: colors.blueGray,
-       
-        green: colors.green,
         gray: colors.gray,
+       
       },
     },
   },

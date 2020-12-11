@@ -6,7 +6,6 @@ const ContextThemeProvider = (props) => {
 
   const [toggle, setToggle] = useState(false)
 
-
   const cambioDark = () => {
     if (localStorage.theme === undefined) {
       localStorage.setItem("theme", "dark");
