@@ -11,7 +11,7 @@ export default function Header() {
       <header></header>
 
       {/* Header Movil */}
-      <header className=" sticky top-0 flex items-center justify-between px-4 py-3.5 shadow-lg bg-white">
+      <header className=" sticky top-0 z-10 flex items-center justify-between px-4 py-3.5 shadow-lg bg-white">
         <button className="focus:outline-none">
           <FaIcons.FaBars className="w-6 h-6" />
         </button>
@@ -47,15 +47,14 @@ export default function Header() {
           <div className="px-6 inline-flex space-x-4 ">
             {categories.map((cat, index) => (
               <a key={cat.index} className="whitespace-nowrap">
-                {" "}
-                {cat}{" "}
+                {cat}
               </a>
             ))}
           </div>
         </section>
-        <section className="py-12 px-8">
+        <section className="py-6 space-y-14 px-8">
           {products.map((pro) => (
-            <div className="">
+            <div className="mb-4">
               <div>
                 <h3 className="text-lg font-semibold"> {pro.name} </h3>
                 <p className="text-sm text-gray-800 leading-tight">
@@ -80,8 +79,12 @@ export default function Header() {
                   </a>
                   <div className="px-4 flex space-x-4 pb-4">
                     {pro.styles.slice(0, 7).map((sty, index) => (
-                      <button key={index} className=" flex flex-col h-6 w-6 rounded-full overflow-hidden focus:ring-2 focus:ring-offset-1  transform -rotate-45 focus:outline-none ">
-                        {/* <span className='sr-only' >{sty.name} </span> */}
+                      <button
+                        key={index}
+                        className=" flex flex-col h-6 w-6 rounded-full overflow-hidden focus:ring-2 focus:ring-black
+                        transform -rotate-45 focus:outline-none ring-2 ring-offset-2 ring-gray-400 "
+                      >
+                        <span className="sr-only">{sty.name} </span>
                         <span
                           className="inline-block h-3 w-6 "
                           style={{ backgroundColor: sty.colors[0] }}
@@ -92,6 +95,12 @@ export default function Header() {
                         ></span>
                       </button>
                     ))}
+                  </div>
+                  <div className="border-t ">
+                    <button className=" flex justify-between items-center w-full  px-5 py-2 focus:ring-2 focus:ring-fuchsia-400 focus:outline-none ">
+                      <span className="font-semibold">Quick Add</span>
+                      <FaIcons.FaPlus />
+                    </button>
                   </div>
                 </div>
               </div>
