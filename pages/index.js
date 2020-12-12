@@ -106,8 +106,8 @@ export default function Home() {
             <div className="px-8 text-sm inline-flex space-x-5 md:px-12">
               {categories.map((category, index) => (
                 <a
+                key={index}
                   href="#"
-                  key={index}
                   className="font-medium text-gray-800 whitespace-nowrap"
                 >
                   {category}
@@ -156,8 +156,8 @@ export default function Home() {
                           <div className="mt-4 flex items-center space-x-6 md:space-x-2">
                             {product.styles.slice(0, 5).map((style, i) => (
                               <span
+                              key={i}
                                 className="md:flex-1 md:min-w-0 md:flex"
-                                key={i}
                               >
                                 <button
                                   className={`h-6 w-6 flex flex-col border border-gray-300 rounded-full overflow-hidden focus:ring-2 focus:ring-offset-1 focus:ring-gray-900 focus:outline-none ${

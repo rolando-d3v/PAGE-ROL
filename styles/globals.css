@@ -3,6 +3,16 @@
 
 @tailwind base;
 
+/* 
+body {
+  overflow: hidden;
+} */
+
+
+
+.removeScrollBody {
+  overflow: hidden;
+}
 
 
 

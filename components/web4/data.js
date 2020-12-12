@@ -1,11 +1,11 @@
 export const categories = [
-    `Women's Running Shoes`,
+    `Running Shoes`,
     `Everyday Sneakers`,
     `Slip-Ons`,
     `High Tops`,
     `Boat Shoes`,
     `Flats`,
-    `Weather Repellent Shoes`,
+    `Weather Shoes`,
   ]
 
   export const products = [
@@ -14,14 +14,14 @@ export const categories = [
       description: 'Our weather-ready sneaker made with merino wool and Puddle Guard™.',
       previewText: 'Cozy sneaker, stormy weather',
       previewImage:
-        'https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_632,f_auto,q_auto,c_fill,ar_0.635814889336016/https://images.ctfassets.net/9uo1qvvet3xa/7iZtj7xuQisv6WANcLi0Jw/bb54f0d33833ecf0fd69507fc658c9e8/W_PCT_WRM.jpg',
+        'https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_834,f_auto,q_auto,c_fill,ar_0.7433155080213903/https://images.ctfassets.net/9uo1qvvet3xa/ELgEuxhi8hxVlupeZ2E5Q/720304a6293c2e3c8a184c476cdda7d6/M_PCT_TD.jpg',
       styles: [
         {
           name: 'Natural Gray (Cream Sole)',
           price: '$115',
           colors: ['#585c60', '#e2e2da'],
           image:
-            'https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6zdZ6PC1jhCrgl1lilg7N8/1',
+            'https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/OrbgtJiuAc7M1yL4KvQjw/1',
         },
         {
           name: 'Savanna Night (Cream Sole)',
@@ -87,7 +87,7 @@ export const categories = [
 
       previewText: 'Cozy sneaker, stormy weather',
       previewImage:
-        'https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_632,f_auto,q_auto,c_fill,ar_0.635814889336016/https://images.ctfassets.net/9uo1qvvet3xa/7iZtj7xuQisv6WANcLi0Jw/bb54f0d33833ecf0fd69507fc658c9e8/W_PCT_WRM.jpg',
+        'https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_834,f_auto,q_auto,c_fill,ar_0.7433155080213903/https://images.ctfassets.net/9uo1qvvet3xa/2uQxW5KGZdfyo0MsfSi3W6/7821933447f0bcd2b053d042f6bae08a/WDM_Parent_Collection_Tile__1_.jpg',
       styles: [
         {
           name: 'Natural Gray (Cream Sole)',
