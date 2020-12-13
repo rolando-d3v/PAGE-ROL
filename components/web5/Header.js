@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import * as FaIcons from "react-icons/fa";
-import { ListToggle, ListIphones } from "./data";
+import { ListToggle, ListIphones, List12pro, List12 } from "./data";
 import Carousel from "./Carousel";
+import Main2 from "./Main2";
+import Main3 from "./Main3";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -155,7 +157,7 @@ export default function Header() {
             <Link href="/">
               <a className="text-lightBlue-500 font-normal">
                 {" "}
-                Más información >{" "}
+                Más información >
               </a>
             </Link>
           </div>
@@ -172,6 +174,8 @@ export default function Header() {
             />
           </div>
         </section>
+        <Main2/>
+        <Main3 List12pro={List12pro} List12={List12} />
       </main>
     </div>
   );
