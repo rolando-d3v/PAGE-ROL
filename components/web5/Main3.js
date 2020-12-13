@@ -19,7 +19,7 @@ export default function Main3({ List12pro, List12 }) {
             <h3 className="font-semibold text-lg my-4">iPhone 12 Pro</h3>
             <div className="space-y-3 mb-2">
               {List12pro.map((pro) => (
-                <h3 className="text-sm xl:text-base text-gray-600">
+                <h3 key={pro.id}  className="text-sm xl:text-base text-gray-600">
                   {pro.name}{" "}
                 </h3>
               ))}
@@ -35,7 +35,7 @@ export default function Main3({ List12pro, List12 }) {
             <h3 className="font-semibold text-lg my-4">iPhone 12</h3>
             <div className="space-y-3 mb-2">
               {List12.map((pro) => (
-                <h3 className="text-sm  xl:text-base text-gray-600">
+                <h3 key={pro.id}  className="text-sm  xl:text-base text-gray-600">
                   {pro.name}{" "}
                 </h3>
               ))}
@@ -51,7 +51,7 @@ export default function Main3({ List12pro, List12 }) {
             <h3 className="font-semibold text-lg my-4">iPhone 12 Pro</h3>
             <div className="space-y-3 mb-2">
               {List12pro.map((pro) => (
-                <h3 className="text-sm  xl:text-base text-gray-600">
+                <h3 key={pro.id}  className="text-sm  xl:text-base text-gray-600">
                   {pro.name}{" "}
                 </h3>
               ))}
@@ -67,7 +67,7 @@ export default function Main3({ List12pro, List12 }) {
             <h3 className="font-semibold text-lg my-4">iPhone 12 Pro</h3>
             <div className="space-y-3 mb-2">
               {List12.map((pro) => (
-                <h3 className="text-sm  xl:text-base text-gray-600">
+                <h3 key={pro.id}  className="text-sm  xl:text-base text-gray-600">
                   {pro.name}{" "}
                 </h3>
               ))}

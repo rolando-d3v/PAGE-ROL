@@ -10,8 +10,6 @@ import Main4 from "./Main4";
 export default function Header() {
   const [toggle, setToggle] = useState(false);
 
-  console.log(toggle);
-
   const openToggle = () => {
     setToggle(true);
   };
@@ -107,9 +105,9 @@ export default function Header() {
       <section
         className={`${
           toggle
-            ? " translate-y-0 duration-1000 "
-            : " -translate-y-full  duration-700 opacity-20 "
-        }  h-screen   transform bg-black fixed  w-full `}
+            ? " translate-y-0 duration-700 "
+            : " -translate-y-full  duration-700 opacity-75 "
+        }  h-screen transform bg-black fixed  w-full z-20 `}
       >
         <div className="w-full">
           <div className="mx-3 relative">
