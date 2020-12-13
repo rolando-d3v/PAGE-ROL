@@ -5,6 +5,7 @@ import { ListToggle, ListIphones, List12pro, List12 } from "./data";
 import Carousel from "./Carousel";
 import Main2 from "./Main2";
 import Main3 from "./Main3";
+import Main4 from "./Main4";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -176,6 +177,7 @@ export default function Header() {
         </section>
         <Main2/>
         <Main3 List12pro={List12pro} List12={List12} />
+        <Main4/>
       </main>
     </div>
   );
