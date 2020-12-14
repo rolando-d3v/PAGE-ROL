@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Main3({ List12pro, List12 }) {
   return (
-    <div className="bg-white py-32">
-      <div className="text-center">
+    <div className="bg-white py-32 2xl:w-4/5 mx-auto ">
+      <div className="text-center w-4/5 mx-auto ">
         <h3 className="text-4xl xl:text-5xl font-semibold">
           Encuentra el iPhone perfecto para ti.
         </h3>

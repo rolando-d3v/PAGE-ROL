@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import * as FaIcons from "react-icons/fa";
-import { ListToggle, ListIphones, List12pro, List12 } from "./data";
+import { ListToggle, ListIphones, List12pro, List12, descubrir, servicios, valores, acerca, cuenta, empresa } from "./data";
 import Carousel from "./Carousel";
 import Main2 from "./Main2";
 import Main3 from "./Main3";
 import Main4 from "./Main4";
 import Main5 from "./Main5";
+import Main6 from "./Main6";
+import Main7 from "./Main7";
+import Footer from "./Footer";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -46,7 +49,7 @@ export default function Header() {
       </div>
 
       {/* NAV MOVIL */}
-      <div className="z-40 bg-black sticky top-0 md:hidden ">
+      <div className="z-40 bg-black sticky top-0  md:hidden ">
         <section className="text-white">
           <header className="  py-3 flex items-center justify-between mx-4  ">
             <div>
@@ -106,9 +109,9 @@ export default function Header() {
       <section
         className={`${
           toggle
-            ? " translate-y-0 duration-700 "
-            : " -translate-y-full duration-700 opacity-70 "
-        }  h-screen transform bg-black fixed w-full z-20 `}
+            ? " translate-y-0 duration-700 bg-black  "
+            : " -translate-y-full duration-700  "
+        }  h-screen transform fixed w-full z-20 `}
       >
         <div className="w-full pt-1.5">
           <div className="mx-3 relative ">
@@ -136,15 +139,15 @@ export default function Header() {
       <Carousel ListIphones={ListIphones} />
 
       <main>
-        <section className="bg-black pt-36 ">
+        <section className="bg-black pt-32 ">
           <div className="w-10/12 mx-auto text-center ">
             <h3 className="text-gray-100 text-lg lg:text-2xl font-semibold">
               iPhone 12 Pro
             </h3>
-            <h4 className="text-white  text-5xl font-bold font-poppins my-5">
+            <h4 className="text-white w-3/4 mx-auto text-4xl lg:text-5xl font-bold font-poppins mt-2">
               Un salto al siguiente nivel.
             </h4>
-            <div className="w-3/4 md:w-3/5  lg:w-2/4 mx-auto xl:w-5/12  2xl:w-4/12 ">
+            <div className="w-3/4 md:w-3/5 mt-5  lg:w-2/4 mx-auto xl:w-5/12  2xl:w-4/12 ">
               <p className="text-gray-200 font-poppins font-semibold xl:text-lg ">
                 Chip A14 Bionic, un nuevo diseño, Ceramic Shield, escáner LiDAR
                 y un sistema de cámaras Pro optimizado para tomar fotos con poca
@@ -155,7 +158,7 @@ export default function Header() {
               Consulta la disponibilidad más adelante
             </h2>
             <Link href="/">
-              <a className="text-lightBlue-500 font-normal">
+              <a className="text-lightBlue-500 font-normal xl:text-2xl ">
                 {" "}
                 Más información >
               </a>
@@ -178,7 +181,10 @@ export default function Header() {
         <Main3 List12pro={List12pro} List12={List12} />
         <Main4/>
         <Main5/>
+        <Main6/>
+        <Main7/>
       </main>
+        <Footer descubrir={descubrir}  servicios={servicios}  valores={valores} acerca={acerca}  cuenta={cuenta} empresa={empresa}  />
     </div>
   );
 }

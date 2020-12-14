@@ -42,3 +42,47 @@ export const List12 = [
     {id: 7, name: 'Compatible con accesorios MagSafe'},
     {id: 8, name: 'Consulta la disponibilidad más adelante'},
 ]
+
+
+// FOOTER
+
+export const descubrir = [
+    {id: 1, name: 'Mac'},
+    {id: 2, name: 'iPad'},
+    {id: 3, name: 'Phone'},
+    {id: 4, name: ' Watch '},
+    {id: 5, name: ' TV '},
+    {id: 6, name: 'Music'},
+    {id: 7, name: 'AirPods'},
+    {id: 8, name: 'iPod touch'},
+]
+export const servicios = [
+    {id: 1, name: 'Apple Music'},
+    {id: 2, name: 'Apple TV+'},
+    {id: 3, name: 'Apple Arcade'},
+    {id: 4, name: ' Cloud'},
+    {id: 5, name: '  Apple One '},
+    {id: 6, name: 'Apple Books'},
+    {id: 7, name: 'App Store'},
+]
+export const valores = [
+    {id: 1, name: 'Accesibilidad'},
+    {id: 2, name: 'Medio ambiente'},
+    {id: 3, name: 'Privacidad'},
+]
+export const cuenta = [
+    {id: 1, name: 'Administrar tu Apple ID'},
+    {id: 2, name: 'iCloud.com'},
+]
+export const empresa = [
+    {id: 1, name: 'Apple y la empresa'},
+]
+
+export const acerca = [
+    {id: 1, name: 'Newsroom'},
+    {id: 2, name: 'Directivos de Apple'},
+    {id: 3, name: 'Oportunidades de empleo'},
+    {id: 4, name: 'Inversionistas '},
+    {id: 5, name: ' Eventos'},
+    {id: 6, name: 'Contactar a Apple'},
+]
