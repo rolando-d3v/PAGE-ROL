@@ -4,14 +4,14 @@ export default function Main4() {
   return (
     <div className="bg-gray-100 w-full">
       <div className="w-11/12 mx-auto pt-28 pb-8">
-        <h3 className="text-3xl font-bold text-center">
+        <h3 className="text-3xl xl:text-5xl font-bold text-center">
           Accesorios destacados
         </h3>
       </div>
 
       <section className="bg-white py-14 md:w-10/12 lg:w-9/12 xl:w-3/5 mx-auto">
         <div className="w-8/12 mx-auto md:flex md:space-x-8 lg:space-x-16 xl:space-x-28 md:items-center">
-          <div className="w-8/12 mx-auto text-center space-y-6">
+          <div className="w-11/12 sm:w-3/5 md:w-10/12  mx-auto text-center space-y-6">
             <h2 className="text-orange-600  text-xs py-0.5 px-2 border border-orange-600 rounded-xl">
               Consulta la dispnibilidad mas adelante{" "}
             </h2>

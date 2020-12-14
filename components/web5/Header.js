@@ -6,6 +6,7 @@ import Carousel from "./Carousel";
 import Main2 from "./Main2";
 import Main3 from "./Main3";
 import Main4 from "./Main4";
+import Main5 from "./Main5";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -25,7 +26,7 @@ export default function Header() {
         <section className="text-white md:w-11/12 lg:w-9/12 xl:w-4/6 2xl:w-3/5 mx-auto ">
           <header className=" py-3 flex items-center justify-between mx-4  ">
             <button>
-              <FaIcons.FaApple className="w-6 h-6" />
+              <FaIcons.FaApple className="w-6 h-6 text-gray-200" />
             </button>
             <div className="flex items-center space-x-8 lg:space-x-10 xl:space-x-14">
               {ListToggle.map((tog) => (
@@ -93,7 +94,7 @@ export default function Header() {
             </div>
 
             <button>
-              <FaIcons.FaApple className="w-6 h-6" />
+              <FaIcons.FaApple className="w-6 h-6 text-gray-300" />
             </button>
 
             <div></div>
@@ -106,14 +107,14 @@ export default function Header() {
         className={`${
           toggle
             ? " translate-y-0 duration-700 "
-            : " -translate-y-full  duration-700 opacity-75 "
-        }  h-screen transform bg-black fixed  w-full z-20 `}
+            : " -translate-y-full duration-700 opacity-70 "
+        }  h-screen transform bg-black fixed w-full z-20 `}
       >
-        <div className="w-full">
-          <div className="mx-3 relative">
-            <FaIcons.FaSearch className="text-gray-600 absolute left-2 bottom-2.5  " />
+        <div className="w-full pt-1.5">
+          <div className="mx-3 relative ">
+            <FaIcons.FaSearch className="text-gray-600 absolute left-2 bottom-2.5   " />
             <input
-              className="w-full bg-gray-900 border-transparent rounded-xl pl-8 text-white leading-tight"
+              className="w-full bg-gray-900  border-0 rounded-xl pl-8 text-white leading-tight  focus:ring-black "
               type="text"
               placeholder="Buscar en apple.com"
             />
@@ -176,6 +177,7 @@ export default function Header() {
         <Main2/>
         <Main3 List12pro={List12pro} List12={List12} />
         <Main4/>
+        <Main5/>
       </main>
     </div>
   );
