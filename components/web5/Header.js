@@ -160,7 +160,7 @@ export default function Header() {
             <Link href="/">
               <a className="text-lightBlue-500 font-normal xl:text-2xl ">
                 {" "}
-                Más información >
+                Más información 
               </a>
             </Link>
           </div>
