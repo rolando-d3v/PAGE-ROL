@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import Link from "next/link";
-
+import Options from "./Options";
 
 export default function Navigation() {
   const [drop, setDrop] = useState(false);
- 
- 
-
 
   const openDrop = () => {
     setDrop(!drop);
+  };
+
+  const closeDrop = () => {
+    setDrop(false);
   };
 
   const listItems = [
@@ -20,17 +21,11 @@ export default function Navigation() {
     { id: 4, name: "Company", url: "/" },
   ];
 
-
-
-
   return (
-    <div className='w-full'  >
-        
-      <div className="relative overflow-hidden ">
-        <div className="mx-auto "  >
-
-          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28  dark:bg-black ">
-              
+    <div className="w-full ">
+      <div className="relative overflow-hidden">
+        <div className="mx-auto ">
+          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28 ">
             {/* corte de la foto con un svg */}
             <svg
               className="hidden lg:block absolute right-0 inset-y-0 h-full w-3/5  xl:w-full text-white transform translate-x-1/2 "
@@ -60,7 +55,7 @@ export default function Navigation() {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {listItems.map((list) => (
-                    <Link key={list.id} href={list.url} >
+                    <Link key={list.id} href={list.url}>
                       <a className="font-medium text-gray-500 hover:text-gray-900">
                         {list.name}
                       </a>
@@ -78,8 +73,8 @@ export default function Navigation() {
 
             {/* Mobile  */}
 
-            <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden ">
-              <div className="rounded-lg shadow-md bg-white  overflow-hidden border-2 border-indigo-400">
+            <div className="absolute top-0 inset-x-0 transition transform origin-top-right md:hidden z-10 bg-green-600 ">
+              <div className="shadow-md bg-white  overflow-hidden border-2 border-indigo-400 rounded-b-lg ">
                 <div className="px-5 py-4 flex items-center justify-between">
                   <div>
                     <img
@@ -110,7 +105,7 @@ export default function Navigation() {
                   aria-labelledby="main-menu"
                   className={`${drop ? "flex" : "hidden"}`}
                 >
-                  <div className="px-2 pt-2 pb-3 space-y-1 w-full" >
+                  <div className="px-2 pt-2 pb-3 space-y-1 w-full">
                     {listItems.map((list) => (
                       <Link key={list.id} href="#">
                         <a className="block px-3 py-2 w-full rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-indigo-400">
@@ -130,8 +125,7 @@ export default function Navigation() {
                 </div>
               </div>
             </div>
-
-
+            <div className={`${drop ? 'inset-0' :  '' } " absolute bg-gradient-to-b from-black  h-screen " `} onClick={closeDrop} ></div>
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
@@ -176,8 +170,8 @@ export default function Navigation() {
             alt=""
           />
         </div>
-
       </div>
+        {/* <Options /> */}
     </div>
   );
 }

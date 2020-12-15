@@ -9,9 +9,12 @@ body {
 } */
 
 
-
+/* quita el scrollx del body  */
 .removeScrollBody {
   overflow: hidden;
+}
+.rody {
+  overflow-y:hidden;
 }
 
 

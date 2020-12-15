@@ -63,9 +63,9 @@ export default function Navigation3() {
         <FaIcons.FaMoon className="dark:text-blue-600 text-gray-400 absolute right-0" />
       </section>
 
-      <section>
+      <section className="">
         <div
-          className="w-auto  dark:bg-black  xl:flex bg-white rounded-lg p-4 m-2 border  border-gray-400"
+          className=" dark:bg-black  transform duration-1000  lg:flex bg-white rounded-lg p-4 m-2 border  border-gray-400 "
           style={{ width: "25rem" }}
         >
           <img

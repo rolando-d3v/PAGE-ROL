@@ -18,7 +18,7 @@ export default function Header() {
     setToggle(true);
   };
 
-  const closeToggle = () => {
+  const closeToggle =  () => {
     setToggle(false);
   };
 
@@ -109,9 +109,9 @@ export default function Header() {
       <section
         className={`${
           toggle
-            ? " translate-y-0 duration-700 bg-black "
-            : " -translate-y-full duration-700  "
-        }  h-screen transform fixed w-full z-20  `}
+            ? " translate-y-0  bg-black"
+            : " -translate-y-full  "
+        }  h-screen transform fixed w-full z-20 duration-700 `}
       >
         <div className="w-full pt-1.5">
           <div className="mx-3 relative ">
