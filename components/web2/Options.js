@@ -43,7 +43,7 @@ export default function Options() {
           >
             <ul className="max-h-56 rounded-md  text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm w-full">
               {listOptions.map((opt) => (
-                <li className="text-gray-600  relative py-2 pl-3 pr-9 hover:bg-indigo-300 flex items-center hover:text-indigo-600">
+                <li key={opt.id} className="text-gray-600  relative py-2 pl-3 pr-9 hover:bg-indigo-300 flex items-center hover:text-indigo-600">
                   <div className="flex items-center">
                     <img
                       src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"

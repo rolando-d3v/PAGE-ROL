@@ -107,7 +107,7 @@ export default function Navigation() {
                 >
                   <div className="px-2 pt-2 pb-3 space-y-1 w-full">
                     {listItems.map((list) => (
-                      <Link key={list.id} href="#">
+                      <Link key={list.id} href="/">
                         <a className="block px-3 py-2 w-full rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-indigo-400">
                           {list.name}
                         </a>
@@ -125,7 +125,12 @@ export default function Navigation() {
                 </div>
               </div>
             </div>
-            <div className={`${drop ? 'inset-0' :  '' } " absolute bg-gradient-to-b from-black  h-screen " `} onClick={closeDrop} ></div>
+            <div
+              className={`${
+                drop ? "inset-0" : ""
+              } bg-gradient-to-b from-black  h-screen fixed`}
+              onClick={closeDrop}
+            ></div>
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
@@ -167,11 +172,26 @@ export default function Navigation() {
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-            alt=""
+            alt="g"
           />
         </div>
       </div>
-        {/* <Options /> */}
+      <Options />
+
+     
+
+      <div className="">
+        <div className=" flex justify-center ">
+          <div className="inline-flex" style={{ width: "1500px" }}>
+            <img
+              className="mx-auto object-cover  h-96 "
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+              alt="g"
+              style={{ width: "1200px" }}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

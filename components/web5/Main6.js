@@ -117,7 +117,7 @@ export default function Main6() {
         </section>
       </section>
 
-      <section className="bg-white py-14 md:py-0 md:w-10/12  mx-auto mt-2">
+      <section className="bg-white pt-14 md:py-0 md:w-10/12  mx-auto mt-2">
         <div className=" mx-auto   lg:w-11/12  md:flex md:items-center ">
           <div className=" w-4/5 md:w-7/12 lg:w-5/12 mx-auto text-center  md:ml-4">
             <img

@@ -18,9 +18,6 @@ export default function Main5() {
             <h3 className="text-3xl 2xl:text-5xl font-bold text-center">
               Como siempre.
             </h3>
-            {/* <h3 className="text-blue-600 text-lg font-semibold text-center mt-4">
-              Más información
-            </h3> */}
           </div>
           <div className="hidden md:flex lg:hidden ">
             <div className="">
@@ -35,18 +32,18 @@ export default function Main5() {
         </div>
       </section>
 
-      <div className="flex justify-center overflow-hidden md:hidden ">
-        <div className=" ">
+    
+        <div className="flex justify-center  md:hidden ">
           <div className=" inline-flex" style={{ width: "1200px" }}>
             <img
-              className=" mx-auto"
+              className=" mx-auto object-cover h-80 "
               style={{ width: "750px" }}
               src="/web5/main5.png"
               alt="movil"
             />
           </div>
         </div>
-      </div>
+      
 
       <section className="md:flex md:w-10/12 mx-auto md:space-x-4 mt-2">
 

@@ -164,14 +164,14 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          <div className="py-4 w-full">
+          <div className="py-4 w-full lg:overflow-hidden">
             <img
               className="mx-auto md:hidden"
               src="/web5/movil.png"
               alt="movil"
             />
             <img
-              className="mx-auto hidden md:flex "
+              className="mx-auto hidden md:flex transform lg:translate-x-36"
               src="/web5/iphone.png"
               alt="movil"
             />
