@@ -184,7 +184,7 @@ export default function Header() {
           </div>
         </section>
 
-        <section className="flex  lg:mt-16 w-full xl:w-10/12 2xl:w-8/12  mx-auto">
+        <section className="flex  lg:mt-16 w-full xl:w-10/12 2xl:w-9/12  mx-auto">
           {/* SIDEBAR DESKTOP */}
           <section className="mx-4 hidden lg:flex">
             <aside className="w-full">
